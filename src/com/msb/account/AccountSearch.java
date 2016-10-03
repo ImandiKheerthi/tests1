@@ -47,13 +47,13 @@ public class AccountSearch {
             if(MSBUtils.isElementPresent(By.id("accountSearchButton"), driver)){
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("interface");
+    driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("accountType"))).selectByVisibleText("Vendor");
-		    driver.findElement(By.id("accountSearchButton")).click();
-		    
+    driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("interfaceer");
     driver.findElement(By.id("accountSearchButton")).click();
-		    driver.findElement(By.id("accountName")).clear();
+    driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("i");
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("accountType"))).selectByVisibleText("Customer");
@@ -64,11 +64,10 @@ public class AccountSearch {
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Canada");
     driver.findElement(By.cssSelector("option[value=\"5\"]")).click();
     driver.findElement(By.id("accountSearchButton")).click();
-    
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Germany");
     driver.findElement(By.cssSelector("option[value=\"4\"]")).click();
     driver.findElement(By.id("accountSearchButton")).click();
-    new Select(driver.findElement(By.id("accountIndustry"))).selectByVisibleText("IT Services & Staffing And Recruiting");
+    new Select(driver.findElement(By.xpath("accountIndustry"))).selectByVisibleText("IT Services & Staffing And Recruiting");
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("accountIndustry"))).selectByVisibleText("Select Industry");
     driver.findElement(By.id("accountSearchButton")).click();
@@ -82,7 +81,7 @@ public class AccountSearch {
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("");
     driver.findElement(By.id("accountSearchButton")).click();
-    driver.findElement(By.id("accountName")).clear();		    
+    driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("inter");
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Select Country");
