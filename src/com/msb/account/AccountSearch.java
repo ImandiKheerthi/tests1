@@ -66,9 +66,9 @@ public class AccountSearch {
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Germany");
     driver.findElement(By.cssSelector("option[value=\"4\"]")).click();
-    driver.findElement(By.cssSelector("accountSearchButton")).click();
-    new Select(driver.findElement(By.cssSelector("accountIndustry"))).selectByVisibleText("IT Services & Staffing And Recruiting");
-    driver.findElement(By.id("accountSearchButton"))
+    driver.findElement(By.id("accountSearchButton")).click();
+    new Select(driver.findElement(By.xpath("accountIndustry"))).selectByVisibleText("IT Services & Staffing And Recruiting");
+    driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("accountIndustry"))).selectByVisibleText("Select Industry");
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Select Country");
