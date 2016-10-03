@@ -61,10 +61,10 @@ public class AccountSearch {
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Australia");
     driver.findElement(By.cssSelector("option[value=\"1\"]")).click();
     driver.findElement(By.id("accountSearchButton")).click();
-    new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Canada");
+    new Select(driver.findElement(By.css("Countries"))).selectByVisibleText("Canada");
     driver.findElement(By.cssSelector("option[value=\"5\"]")).click();
     driver.findElement(By.id("accountSearchButton")).click();
-    new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Germany");
+    new Select(driver.findElement(By.css("Countries"))).selectByVisibleText("Germany");
     driver.findElement(By.cssSelector("option[value=\"4\"]")).click();
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("accountIndustry"))).selectByVisibleText("IT Services & Staffing And Recruiting");
