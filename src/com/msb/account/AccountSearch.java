@@ -47,8 +47,7 @@ public class AccountSearch {
             if(MSBUtils.isElementPresent(By.id("accountSearchButton"), driver)){
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("interface");
-    driver.findElement(By.id("accountSearchButton")).click();
-    new Select(driver.findElement(By.id("accountType"))).selectByVisibleText("Vendor");
+    driver.findElement(By.id("accountSearchButton")).click();   
     driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("interfaceer");
@@ -81,8 +80,9 @@ public class AccountSearch {
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("");
     driver.findElement(By.id("accountSearchButton")).click();
-    driver.findElement(By.id("accountName")).clear();
+    driver.findElement(By.id("accountName")).clear();		    
     driver.findElement(By.id("accountName")).sendKeys("inter");
+    driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Select Country");
     driver.findElement(By.cssSelector("option[value=\"-1\"]")).click();
     driver.findElement(By.id("accountSearchButton")).click();
