@@ -79,12 +79,13 @@ public class AccountSearch {
     new Select(driver.findElement(By.id("accountState"))).selectByVisibleText("California");
     driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
+		    driver.close();
     driver.findElement(By.id("accountName")).sendKeys("");
     driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("inter");
     driver.findElement(By.id("accountSearchButton")).click();
-     Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Select Country");
+     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Select Country");
     driver.findElement(By.cssSelector("option[value=\"-1\"]")).click();
     driver.findElement(By.id("accountSearchButton")).click();
 
