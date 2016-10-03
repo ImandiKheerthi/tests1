@@ -84,7 +84,7 @@ public class AccountSearch {
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("inter");
     driver.findElement(By.id("accountSearchButton")).click();
-    new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Select Country");
+     Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Select Country");
     driver.findElement(By.cssSelector("option[value=\"-1\"]")).click();
     driver.findElement(By.id("accountSearchButton")).click();
 
