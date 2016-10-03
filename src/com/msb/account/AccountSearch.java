@@ -51,8 +51,8 @@ public class AccountSearch {
     new Select(driver.findElement(By.id("accountType"))).selectByVisibleText("Vendor");
     driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
-    driver.findElement(By.xpath("accountName")).sendKeys("interfaceer");
-    driver.findElement(By.xpath("accountSearchButton")).click();
+    driver.findElement(By.id("accountName")).sendKeys("interfaceer");
+    driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("i");
     driver.findElement(By.id("accountSearchButton")).click();
@@ -66,9 +66,9 @@ public class AccountSearch {
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Germany");
     driver.findElement(By.cssSelector("option[value=\"4\"]")).click();
-    driver.findElement(By.id("accountSearchButton")).click();
-    new Select(driver.findElement(By.xpath("accountIndustry"))).selectByVisibleText("IT Services & Staffing And Recruiting");
-    driver.findElement(By.id("accountSearchButton")).click();
+    driver.findElement(By.cssSelector("accountSearchButton")).click();
+    new Select(driver.findElement(By.cssSelector("accountIndustry"))).selectByVisibleText("IT Services & Staffing And Recruiting");
+    driver.findElement(By.id("accountSearchButton"))
     new Select(driver.findElement(By.id("accountIndustry"))).selectByVisibleText("Select Industry");
     driver.findElement(By.id("accountSearchButton")).click();
     new Select(driver.findElement(By.id("Countries"))).selectByVisibleText("Select Country");
