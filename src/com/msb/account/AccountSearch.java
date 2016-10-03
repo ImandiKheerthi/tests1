@@ -51,8 +51,8 @@ public class AccountSearch {
     new Select(driver.findElement(By.id("accountType"))).selectByVisibleText("Vendor");
     driver.findElement(By.id("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
-    driver.findElement(By.id("accountName")).sendKeys("interfaceer");
-    driver.findElement(By.id("accountSearchButton")).click();
+    driver.findElement(By.xpath("accountName")).sendKeys("interfaceer");
+    driver.findElement(By.xpath("accountSearchButton")).click();
     driver.findElement(By.id("accountName")).clear();
     driver.findElement(By.id("accountName")).sendKeys("i");
     driver.findElement(By.id("accountSearchButton")).click();
